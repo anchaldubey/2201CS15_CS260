@@ -5,6 +5,8 @@
 --CREATE DATABASE tutorial9;
 --USE tutorial9;
 
+-- Tables were created directly without using SQL queries
+
 -- Ans.1
 
 SELECT player_name
