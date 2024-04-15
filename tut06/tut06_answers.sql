@@ -96,11 +96,11 @@ left join enrollments e on s.student_id = e.student_id
 where e.student_id is null;
 
 -- Ans.10)
--- select c.course_name, avg(e.grade)
--- from courses c
--- join enrollments e on e.course_id=c.course_id
--- join students s on s.student_id=e.student_id
--- group by c.course_name;
+select c.course_name, avg(e.grade)
+from courses c
+join enrollments e on e.course_id=c.course_id
+join students s on s.student_id=e.student_id
+group by c.course_name;
 
 -- Ans.11)
 select s.first_name, s.last_name, c.course_name
