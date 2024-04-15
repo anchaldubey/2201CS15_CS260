@@ -3,8 +3,8 @@
 -- Comment in MYSQL 
 
 
--- create database tutorial3;
--- use tutorial3;
+-- CREATE DATABASE tutorial3;
+-- USE tutorial3;
 
 --  CREATE TABLE students (
 --     student_id INT PRIMARY KEY,
