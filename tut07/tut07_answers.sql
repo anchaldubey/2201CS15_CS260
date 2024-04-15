@@ -5,7 +5,9 @@
 -- CREATE DATABASE tutorial7;
 USE tutorial7;
  
- -- Ans.1
+-- Ans.1
+-- For Question 1
+-- CALL GetAvgSalaryByDepartmentName('Finance');
 
 DELIMITER //
 
@@ -21,12 +23,7 @@ END//
 DELIMITER ;
 
 
--- -----------To Check Problem 1
--- CALL GetAvgSalaryByDepartmentName('Finance');
--- ----------------------
-
-
--- Ans.2
+ -- Ans.2
 
 DELIMITER //
 CREATE PROCEDURE UpdateEmployeeSalaryByPercentage
@@ -44,7 +41,10 @@ BEGIN
 END//
 DELIMITER ;
 
+
 -- Ans.3
+-- For Question 3
+-- call GetEmployeesByDepartment ('Engineering');
 
 DELIMITER //
 CREATE PROCEDURE GetEmployeesByDepartment
@@ -58,9 +58,6 @@ BEGIN
 END//
 DELIMITER ;
 
--- -----------To Check Problem 3
--- call GetEmployeesByDepartment ('Engineering');
--- ----------------------
 
 -- Ans.4
 
@@ -89,6 +86,7 @@ BEGIN
     LIMIT 1;
 END//
 DELIMITER ;
+
 
 -- Ans.6
 
@@ -119,6 +117,7 @@ BEGIN
 END//
 DELIMITER ;
 
+
 -- Ans.8
 
 DELIMITER //
@@ -136,8 +135,8 @@ BEGIN
 END//
 DELIMITER ;
 
+
 -- Ans.9
--- ----------------------------
 
 DELIMITER //
 CREATE PROCEDURE GetProjectWithHighestBudget()
@@ -156,7 +155,6 @@ DELIMITER ;
 
 
 -- Ans.10
--- ----------------------------
 
 DELIMITER //
 CREATE PROCEDURE GetAvgSalaryAcrossAllDepartments()
@@ -165,6 +163,7 @@ BEGIN
     FROM employees;
 END//
 DELIMITER ;
+
 
 -- Ans.11
 
@@ -177,6 +176,7 @@ BEGIN
     WHERE department_name = DepartmentName;
 END//
 DELIMITER ;
+
 
 -- Ans.12
 
@@ -245,7 +245,6 @@ DELIMITER ;
 
 
 -- Ans.15
-
 
 DELIMITER //
 CREATE PROCEDURE GetEmployeeCountByDepartment()
